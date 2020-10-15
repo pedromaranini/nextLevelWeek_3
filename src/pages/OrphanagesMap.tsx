@@ -32,13 +32,13 @@ function OrphanagesMap() {
                 style={{ width: '100%', height: '100%' }}
             > 
                 /** Versão mapa padrão */
-                <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
 
                 /** Versão mapa darkmode */
                 {/* <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} /> */}
 
                 /** Versão mapa satelite */
-                {/* <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} /> */}
+                <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
             </Map>
 
             <Link to="" className="create-orphanage" >
